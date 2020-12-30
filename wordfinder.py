@@ -2,6 +2,16 @@
 from random import choice
 
 class WordFinder:
+    """Machine to create unique incrementing serial numbers.
+    
+    >>> wf = WordFinder("words.txt")
+    235886 words read
+    
+    >>> wf.words = ["test"]
+
+    >>> wf.random()
+    'test'
+    """
     def __init__(self, path):
         """
         Create a WordFinder from a list of words that exists in path
